@@ -1,0 +1,89 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  align-self: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+form[aria-labelledby='add-a-palette'],
+.palette-container {
+  min-width: 200px;
+}
+
+form[aria-labelledby='add-a-palette'] {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+fieldset legend {
+  margin-bottom: 0.25rem;
+}
+
+#color-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem 1rem;
+  width: fit-content;
+  margin: auto;
+}
+
+
+section[aria-labelledby='my-palettes'] {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.palette-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top-right-radius: 10px;
+}
+
+#palettes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.colors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+
+.palette-container>* {
+  padding-inline: 1rem;
+}
+
+.color-example {
+  padding: 1rem;
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black;
+}
+
+.temperature {
+  padding-block: .5rem;
+}

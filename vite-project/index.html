@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palette Picker</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Palette Picker</h1>
+    <form aria-labelledby="add-a-palette">
+      <h2 id="add-a-palette">Add A Palette</h2>
+      
+      <div id="title-input-container">
+        <label for="palette-title">Palette Title</label>
+        <input type="text" name="paletteTitle" id="palette-title" required>
+      </div>
+
+      <div id="color-input-container">
+        <label for="color-1">Color 1</label>
+        <input type="color" name="color1" id="color-1">
+        <label for="color-2">Color 2</label>
+        <input type="color" name="color2" id="color-2">
+        <label for="color-3">Color 3</label>
+        <input type="color" name="color3" id="color-3">
+      </div>
+      
+
+      <fieldset id="temperature-input-container">
+        <legend>Temperature</legend>
+        <input type="radio" name="temperature" id="temperature-warm" value="warm">
+        <label for="temperature-warm">Warm</label>
+        <input type="radio" name="temperature" id="temperature-neutral" value="neutral">
+        <label for="temperature-neutral">Neutral</label>
+        <input type="radio" name="temperature" id="temperature-cool" value="cool">
+        <label for="temperature-cool">Cool</label>
+      </fieldset>
+
+      <button>Add Palette</button>
+    </form>
+    <section aria-labelledby="my-palettes">
+      <h2 id="my-palettes">My Palettes</h2>
+      <ul id="palettes-list">
+        
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

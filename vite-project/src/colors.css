@@ -1,0 +1,40 @@
+/* Color Scheme & Fonts*/
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+form,
+.palette-container {
+  background: rgb(79, 79, 79);
+}
+
+.warm {
+  background: firebrick;
+}
+
+.cool {
+  background: deepskyblue;
+  color: black;
+}
+
+.neutral {
+  background: grey;
+  color: black;
+}
+
+.contrast {
+  color: black;
+}
+
+button {
+  background: grey;
+  color: whitesmoke;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  color: white;
+}
